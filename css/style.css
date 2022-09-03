@@ -1,0 +1,96 @@
+*{  /*Reset da pagina */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Helvetica, sans-serif;
+}
+
+body{ 
+    background-color: #333;
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 3em;
+}
+
+#calculadora{
+    width: 400px;
+    padding: 0.5em;
+    background-color: #c4c4c4;
+    color:#000;
+    display:flex;
+    flex-direction: column;
+}
+
+#calculadora h3{
+    color:#002029;
+    font-size: 0.8em;
+    font-weight: 300;
+    
+
+}
+
+#operacoes{
+    text-align: right;
+}
+
+#operacoes-anteriores{
+    color:#777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em; 
+
+}
+
+#operacoes-atuais{
+    min-height: 1.6em; 
+    overflow-wrap: break-word; 
+    font-size:3em;
+    font-weight: 700;
+
+}
+
+#botoes-caixa{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 3px; 
+}
+
+#botoes-caixa button{
+    border: 1px solid transparent;
+    border-radius:5px;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor:pointer; 
+    height: 4em;
+}
+
+#botoes-caixa .numero{
+    background-color:#f3f3f3
+}
+
+#botoes-caixa .numero:hover{
+    background-color: #bababa;
+    border-color:#999;
+}
+
+#botoes-caixa #botao-igual{
+    grid-column: span 2;  
+    background-color:#002029;
+}
+
+#botoes-caixa #botao-igual:hover{
+    background-color:#002030;
+}
+
+#botoes-caixa .apagador{
+    background-color: red;
+    opacity: 0.6;
+    font-weight: 700;
+}
+
+#botoes-caixa .apagador:hover{
+    opacity: 0.4;
+}
+
+
